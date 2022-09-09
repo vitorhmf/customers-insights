@@ -6,10 +6,13 @@
 
 ## 1. Abstract:
 
-Cyclistic is a bike-sharing company in Chicago, it has over 5,800 bikes and 600 docking stations. The marketing director believes that the company's future success depends on maximizing the number of annual memberships. To that end, she wants to develop marketing strategies aimed at converting casual travelers into annual members.
+Cyclistic is a bike-sharing company located in Chicago and has over 5,800 bikes and 600 docking stations. 
 
-To do that, however, the marketing team needs to better understand how annual members and casual riders differ, why casual riders would buy a subscription, and how digital media could affect their marketing tactics.
+The marketing director believes that the company's future success depends on maximizing the number of annual memberships. To that end, she wants to develop marketing strategies aimed at converting casual travelers into annual members.
 
+In this way, this project goals to find insights into how do annual members and casual riders use Cyclistic bikes diﬀerently. 
+
+The company's history from September 2021 to July 2022 was analyzed, in a **total of 5,733,030 ride records**, and the conclusions to be presented to the marketing director are available in a dashboard that can be accessed through this link.
 
 **Disclaimer:** Cyclistic is a fictitious company, according to the context presented in this project.
 
@@ -23,10 +26,11 @@ To do that, however, the marketing team needs to better understand how annual me
 
 In 2016, Cyclistic launched a successful bike-share oﬀering. Since then, the program has grown to a ﬂeet of 5,824 bicycles that are geotracked and locked into a network of 692 stations across Chicago. The bikes can be unlocked from one station and returned to any other station in the system anytime.
 
-Until now, Cyclistic’s marketing strategy relied on building general awareness and appealing to broad consumer segments. One approach that helped make these things possible was the ﬂexibility of its pricing plans: single-ride passes, full-day passes, and annual memberships. 
+Until now, Cyclistic’s marketing strategy relied on building general awareness and appealing to broad consumer segments. One approach that helped make these things possible was the ﬂexibility of its pricing plans: single-ride passes, full-day passes, and annual memberships. Customers who purchase single-ride or full-day passes are referred to as casual riders. Customers who purchase annual memberships are Cyclistic members.
 
-Customers who purchase single-ride or full-day passes are referred to as casual riders. Customers who purchase annual memberships are Cyclistic members.
+Cyclistic’s ﬁnance analysts have concluded that annual members are much more proﬁtable than casual riders. And now Lily Moreno, the marketing director, has set a clear goal: design marketing strategies aimed at converting casual riders into annual members.
 
+In this way, this project goals to find insights into how do annual members and casual riders use Cyclistic bikes diﬀerently. This analysis will be done from a dataset that contains 12-month usage records: from September 2021 to July 2022.
 
 ### 3.2 Assumptions
 
@@ -40,14 +44,23 @@ Customers who purchase single-ride or full-day passes are referred to as casual 
 
 | Feature                | Definition                                                                                               |
 |------------------------|----------------------------------------------------------------------------------------------------------|
-| Invoice Number         | Unique identifier for each transaction                                                                   |
-| Stock Code Product     | Item code                                                                                                |
-| Description Product    | Item name                                                                                                |
-| Quantity               | The quantity of each item purchased per transaction                                                      |
-| Invoice Date           | The day the transaction took place                                                                       |
-| Unit Price             | Product price per unit                                                                                   |
-| Customer ID            | Unique customer identifier                                                                               |
-| Country                | The name of the country the customer resides in                                                          |
+| Ride ID                | Unique identifier for each rider                                                                         |
+| Rideable Type          | Bicicle type                                                                                             |
+| Started At             | Date and time the ride started                                                                           |
+| End At                 | Date and time the ride finished                                                                          |
+| Start Station Name     | The name of the station from which the ride started                                                      |
+| Start Station ID       | The ID of the station from which the ride started                                                        |
+| End Station Name       | The name of the station from which the ride ended                                                        |
+| End Station ID         | The ID of the station from which the ride ended                                                          |
+| Start Lat              | The latitude of the station from which the ride started                                                  |
+| Start Long             | The longitude of the station from which the ride started                                                 |
+| End Lat                | The latitude of the station from which the ride ended                                                    |
+| End Long               | The longitude of the station from which the ride ended                                                   |
+| Member / Casual        | Rider type                                                                                               |
+
+### 4.3 Check and Fillout NA
+
+* **Station names and ids:** 832120 NA 
 
 ## 5. Process
 
