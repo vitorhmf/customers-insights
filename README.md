@@ -12,3 +12,26 @@
 
 <img src="images/data_analysis_process.png" width="700">
 
+## 3. Ask
+
+### 3.1 Context
+
+### 3.2 Assumptions
+
+## 4. Prepare
+
+### 4.1 Loading Data
+
+### 4.2 Data Description
+
+## 5. Process
+
+### 5.1 Feature Engineering
+
+### 5.2 Data Filtering
+
+## 6. Analyze
+
+## 7. Share
+
+## 8. Act
