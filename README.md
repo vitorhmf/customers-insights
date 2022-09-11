@@ -94,6 +94,15 @@ The complete code for this step is available [here](https://github.com/vitorhmf/
 
 ## 6. Step 4: Analyze
 
+### 6.1 Seasonality Analysis
+
+* **Annual Seasonality:**
+
+
+* **Weekly Seasonality:**
+
+### 6.2 Rides Analysis:
+
 ## 7. Step 5: Share
 
 [**Dashboard**](https://public.tableau.com/views/CyclisticAnalysis_16628584053490/Painel1?:language=pt-BR&:display_count=n&:origin=viz_share_link)
