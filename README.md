@@ -12,15 +12,21 @@ The marketing director believes that the company's future success depends on max
 
 In this way, this project goals to find insights into how do annual members and casual riders use Cyclistic bikes diﬀerently. 
 
-The company's history from September 2021 to July 2022 was analyzed, in a **total of 5,733,030 ride records**, and the conclusions to be presented to the marketing director are available in a dashboard that can be accessed through this link.
+The company's history from August 2021 to July 2022 was analyzed, in a **total of 5,733,030 rides records**, and the conclusions to be presented to the marketing director are available in a dashboard that can be accessed through this [**link**](https://public.tableau.com/views/CyclisticAnalysis_16628584053490/Painel1?:language=pt-BR&:display_count=n&:origin=viz_share_link).
+
+<img src="images/dashboard_print.png" width="700">
+
+**Key Words:** Google Data Analytics, Customer Insights, R, Tydiverse, Geosphere, Dplyr, Tableau, Dashboard
 
 **Disclaimer:** Cyclistic is a fictitious company, according to the context presented in this project.
 
 ## 2. Methodology
 
+Google certification in Data Analytics works with a methodology divided into 6 steps described below. The development of this project was guided by this framework.
+
 <img src="images/data_analysis_process.png" width="700">
 
-## 3. Ask
+## 3. Step 1: Ask
 
 ### 3.1 Context
 
@@ -30,11 +36,17 @@ Until now, Cyclistic’s marketing strategy relied on building general awareness
 
 Cyclistic’s ﬁnance analysts have concluded that annual members are much more proﬁtable than casual riders. And now Lily Moreno, the marketing director, has set a clear goal: design marketing strategies aimed at converting casual riders into annual members.
 
-In this way, this project goals to find insights into how do annual members and casual riders use Cyclistic bikes diﬀerently. This analysis will be done from a dataset that contains 12-month usage records: from September 2021 to July 2022.
+In this way, this project goals to find insights into how do annual members and casual riders use Cyclistic bikes diﬀerently. This analysis will be done from a dataset that contains 12-month usage records: from August 2021 to July 2022.
 
 ### 3.2 Assumptions
 
-## 4. Prepare
+To better define the scope of the analysis and avoid bias in the conclusions developed, the assumptions below were previously defined
+
+* **Ride Duration:** only rides lasting at least 1 minute were considered.
+* **Distance:** distances less than 1 meter and greater than 100 km were not considered in the analysis.
+* **Speed:** the maximum average speed considered viable was 60km/h. Speeds above this value have a high chance of errors in the records and were therefore disregarded
+
+## 4. Step 2: Prepare
 
 ### 4.1 Loading Data
 
@@ -42,7 +54,7 @@ In this way, this project goals to find insights into how do annual members and 
 
 ### 4.2 Data Description
 
-| Feature                | Definition                                                                                               |
+| Feature                | Description                                                                                               |
 |------------------------|----------------------------------------------------------------------------------------------------------|
 | Ride ID                | Unique identifier for each rider                                                                         |
 | Rideable Type          | Bicicle type                                                                                             |
@@ -58,18 +70,36 @@ In this way, this project goals to find insights into how do annual members and 
 | End Long               | The longitude of the station from which the ride ended                                                   |
 | Member / Casual        | Rider type                                                                                               |
 
-### 4.3 Check and Fillout NA
+The complete code for this step is available [here](https://github.com/vitorhmf/customers-insights/blob/main/notebooks/v01_cyclistic_prepare.R).
 
-* **Station names and ids:** 832120 NA 
+## 5. Step 3: Process
 
-## 5. Process
+### 5.1 Check and Fillout NA
 
-### 5.1 Feature Engineering
+* **Stations names and ids:** 14.5% of the records in the dataset were missing information about the name and id of the start and end stations. Simply deleting these records could generate a bias in the analysis, so the columns that contained this information were removed and the stations were defined by their latitude and longitude information.
 
-### 5.2 Data Filtering
+### 5.2 Feature Engineering
 
-## 6. Analyze
+* **Features from date:** date, month, day, year, day of week;
+* **Features from rides:** duration (min), distance (km), speed (km/h);
+* **Features from geo location:** start station, end station 
 
-## 7. Share
+### 5.3 Data Filtering
 
-## 8. Act
+* **Ride Duration:** only records with a duration greater than or equal to 1 minute were kept;
+* **Distance:** records were kept with distances greater than 1 meter and less than 100 km;
+* **Speed:** only records with average speeds below 60km/h were selected;
+
+The complete code for this step is available [here](https://github.com/vitorhmf/customers-insights/blob/main/notebooks/v02_cyclistic_process.R).
+
+## 6. Step 4: Analyze
+
+## 7. Step 5: Share
+
+[**Dashboard**](https://public.tableau.com/views/CyclisticAnalysis_16628584053490/Painel1?:language=pt-BR&:display_count=n&:origin=viz_share_link)
+
+## 8. Step 6: Act
+
+## 9. Conclusions
+
+## 10. References
