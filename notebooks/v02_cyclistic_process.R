@@ -59,20 +59,33 @@ df3$year <- format(as.Date(df3$date), '%Y')
 ## 3.5 Day of Week
 df3$day_of_week <- format(as.Date(df3$date), '%A')
 
-## 3.6 Duration (min)
+## 3.6 Season
+df3$season[df3$month=="12"] <- "winter"
+df3$season[df3$month=="01"] <- "winter"
+df3$season[df3$month=="02"] <- "winter"
+df3$season[df3$month=="03"] <- "spring"
+df3$season[df3$month=="04"] <- "spring"
+df3$season[df3$month=="05"] <- "spring"
+df3$season[df3$month=="06"] <- "summer"
+df3$season[df3$month=="07"] <- "summer"
+df3$season[df3$month=="08"] <- "summer"
+df3$season[df3$month=="09"] <- "fall"
+df3$season[df3$month=="10"] <- "fall"
+df3$season[df3$month=="11"] <- "fall"
+
+## 3.7 Duration (min)
 df3$duration <- difftime(df3$ended_at, df3$started_at, units='mins')
 df3$duration <- round(df3$duration, digit=2)
 
-## 3.7 Distance (km)
+## 3.8 Distance (km)
 df3$distance <- distGeo(matrix(c(df3$start_lng, df3$start_lat), ncol=2), matrix(c(df3$end_lng, df3$end_lat), ncol=2))/1000
 df3$distance <- round(df3$distance, digit=2)
 
-## 3.8 Speed (km/h)
+## 3.9 Speed (km/h)
 df3$speed = c(df3$distance)/as.numeric(c(df3$duration), units='hours')
 df3$speed <- round(df3$speed, digit=2)
 
-## 3.9 Station Location
-
+## 3.10 Station Location
 df3$start_lat <- round(df3$start_lat, digit=3)
 df3$start_lng <- round(df3$start_lng, digit=3)
 df3$end_lat <- round(df3$start_lat, digit=3)
@@ -80,6 +93,9 @@ df3$end_lng <- round(df3$end_lng, digit=3)
 
 df3$start_station <- str_c(df3$start_lat, ' , ', df3$start_lng)
 df3$end_station <- str_c(df3$end_lat, ' , ', df3$end_lng)
+
+
+summary(df3)
 
 View(df3)
 
@@ -92,19 +108,19 @@ View(df3)
 df4 <- data.frame(df3)
 
 ## 4.1 Duration < 1 min
-df4 <- subset(df4, df4[15] >= 1 )
+df4 <- subset(df4, df4[16] >= 1 )
 
 ## 4.2 Distance < 1m
-df4 <- subset(df4, df4[16] > 0.001)
+df4 <- subset(df4, df4[17] > 0.001)
 
 ## 4.3 Distance > 100km (wrong records)
-df4 <- subset(df4, df4[16] < 100)
+df4 <- subset(df4, df4[17] < 100)
 
 ## 4.2 Speed < 0 
-df4 <- subset(df4, df4[17] > 0)
+df4 <- subset(df4, df4[18] > 0)
 
 ## 4.3 Speed > 50
-df4 <- subset(df4, df4[17] < 60)
+df4 <- subset(df4, df4[18] < 60)
 
 summary(df4)
 
