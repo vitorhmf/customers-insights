@@ -15,7 +15,7 @@ trip_data_2021_11 <- read_csv('/home/vitor/Repos/google_project/data/202111-divv
 trip_data_2021_12 <- read_csv('/home/vitor/Repos/google_project/data/202112-divvy-tripdata.csv')
 trip_data_2022_01 <- read_csv('/home/vitor/Repos/google_project/data/202201-divvy-tripdata.csv')
 trip_data_2022_02 <- read_csv('/home/vitor/Repos/google_project/data/202202-divvy-tripdata.csv')
-trip_data_2022_03 <- read_csv('/home/vitor/Repos/google_project/data/202202-divvy-tripdata.csv')
+trip_data_2022_03 <- read_csv('/home/vitor/Repos/google_project/data/202203-divvy-tripdata.csv')
 trip_data_2022_04 <- read_csv('/home/vitor/Repos/google_project/data/202204-divvy-tripdata.csv')
 trip_data_2022_05 <- read_csv('/home/vitor/Repos/google_project/data/202205-divvy-tripdata.csv')
 trip_data_2022_06 <- read_csv('/home/vitor/Repos/google_project/data/202206-divvy-tripdata.csv')
@@ -34,6 +34,8 @@ df1 <- bind_rows(trip_data_2021_08,
                       trip_data_2022_05,
                       trip_data_2022_06,
                       trip_data_2022_07)
+
+View(df1)
 
 ## 1.4 Export Raw Data
 write.csv(df1,"/home/vitor/Repos/google_project/data/df_raw_cyclistic.csv", row.names = FALSE)

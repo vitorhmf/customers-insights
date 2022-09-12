@@ -14,7 +14,6 @@ library('stringr')
 ## 1.2 Loading Data
 df1 <- read_csv('/home/vitor/Repos/google_project/data/df_raw_cyclistic.csv')
 
-
 ############################################################################
 
 # 2. DATA DESCRIPTION
@@ -94,11 +93,6 @@ df3$end_lng <- round(df3$end_lng, digit=3)
 df3$start_station <- str_c(df3$start_lat, ' , ', df3$start_lng)
 df3$end_station <- str_c(df3$end_lat, ' , ', df3$end_lng)
 
-
-summary(df3)
-
-View(df3)
-
 # n_distinct(df3$end_station)
 
 ############################################################################
@@ -122,11 +116,7 @@ df4 <- subset(df4, df4[18] > 0)
 ## 4.3 Speed > 50
 df4 <- subset(df4, df4[18] < 60)
 
-summary(df4)
-
-View(df4)
-str(df4)
-
+############################################################################
 
 # 5. EXPORT DATA FRAME
 
