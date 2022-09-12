@@ -98,6 +98,11 @@ The complete code for this step is available [here](https://github.com/vitorhmf/
 
 * **Annual Seasonality:**
 
+<img src="images/annual_seasonality.png" width="600">
+
+As expected, the number of rides has a strong relationship with the climate of the region. In winter, for example, the number of records almost reaches zero.
+This fact proves the importance of increasing the number of members, this would reduce the impact of seasonality on the company's revenue
+
 
 * **Weekly Seasonality:**
 
