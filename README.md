@@ -96,17 +96,29 @@ The complete code for this step is available [here](https://github.com/vitorhmf/
 
 ### 6.1 Seasonality Analysis
 
-* **Annual Seasonality:**
+* **Annual Seasonality (Rides vs. Month):**
 
-<img src="images/annual_seasonality.png" width="600">
+<img src="images/annual_seasonality.PNG" width="500">
 
 As expected, the number of rides has a strong relationship with the climate of the region. In winter, for example, the number of records almost reaches zero.
 This fact proves the importance of increasing the number of members, this would reduce the impact of seasonality on the company's revenue
 
+| Season                 | Months                                 | Temperatures Range   |
+|------------------------|----------------------------------------|----------------------|
+| Winter                 | Dec, Jan, Feb                          | can reach -20°C      |
+| Spring                 | Mar, Apr, May                          | 9°C to 21°C          |
+| Summer                 | Jun, Jul, Aug                          | 17°C to 28°C         |
+| Fall                   | Sep, Out, Nov                          | 7°C to 17°C          |
 
 * **Weekly Seasonality:**
 
+<img src="images/weekly_seasonality.PNG" width="600">
+
 ### 6.2 Rides Analysis:
+
+<img src="images/ride_information.PNG" width="700">
+
+### 6.3 Geo Location:
 
 ## 7. Step 5: Share
 
