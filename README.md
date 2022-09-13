@@ -94,14 +94,17 @@ The complete code for this step is available [here](https://github.com/vitorhmf/
 
 ## 6. Step 4: Analyze
 
-### 6.1 Seasonality Analysis
+### 6.1 Customer Types (Rides vs. Type):
+
+<img src="images/customer_types.PNG" width="400">
+
+### 6.2 Seasonality Analysis
 
 * **Annual Seasonality (Rides vs. Month):**
 
 <img src="images/annual_seasonality.PNG" width="500">
 
-As expected, the number of rides has a strong relationship with the climate of the region. In winter, for example, the number of records almost reaches zero.
-This fact proves the importance of increasing the number of members, this would reduce the impact of seasonality on the company's revenue
+The number of rides has a strong relationship with the climate of the region (described in the table below). In winter, for example, the number of records almost reaches zero. This fact proves the importance of increasing the number of annual members, this would reduce the impact of seasonality on the company's revenue.
 
 | Season                 | Months                                 | Temperatures Range   |
 |------------------------|----------------------------------------|----------------------|
@@ -110,15 +113,15 @@ This fact proves the importance of increasing the number of members, this would 
 | Summer                 | Jun, Jul, Aug                          | 17°C to 28°C         |
 | Fall                   | Sep, Out, Nov                          | 7°C to 17°C          |
 
-* **Weekly Seasonality:**
 
-<img src="images/weekly_seasonality.PNG" width="600">
 
-### 6.2 Rides Analysis:
+* **Weekly Seasonality (Rides vs. Day of Week):**
+
+<img src="images/weekly_seasonality.PNG" width="500">
+
+### 6.3 Rides Analysis:
 
 <img src="images/ride_information.PNG" width="700">
-
-### 6.3 Geo Location:
 
 ## 7. Step 5: Share
 
@@ -126,6 +129,10 @@ This fact proves the importance of increasing the number of members, this would 
 
 ## 8. Step 6: Act
 
-## 9. Conclusions
+### 8.1 Actions
+
+### 8.2. Next Steps
+
+* **Geolocation:** the decision to eliminate the columns with the names and ids of the start and end stations avoided the elimination of more than 800,000 records (approximately 15% of the dataset), however, the use of geolocation to define the stations proved to be ineffective, as
 
 ## 10. References
