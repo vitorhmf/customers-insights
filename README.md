@@ -99,7 +99,9 @@ The complete code for this step is available [here](https://github.com/vitorhmf/
 
 ## 6. Step 4: Analyze
 
-### 6.1 Customer Types (Rides vs. Type):
+### 6.1 Customer Types
+
+**Rides vs. Type:**
 
 <img src="images/customer_types.PNG" width="400">
 
@@ -107,7 +109,9 @@ As discussed earlier, the main objective of this project is to gather business i
 
 So we have an initial scenario with **42% of trips made by casual customers** and **58% by members with an annual subscription**.
 
-### 6.2 Annual Seasonality (Rides vs. Month)
+### 6.2 Annual Seasonality 
+
+**Rides vs. Month:**
 
 <img src="images/annual_seasonality.PNG" width="500">
 
@@ -122,7 +126,9 @@ The number of rides has a strong relationship with the climate of the region (de
 
 According to the usage profile during the year, an interesting action would be to launch a marketing campaign during the spring for occasional customers to migrate to the annual plan.
 
-### 6.3 Weekly Seasonality (Rides vs. Days of Week):
+### 6.3 Weekly Seasonality
+
+**Rides vs. Days of Week:**
 
 <img src="images/weekly_seasonality.PNG" width="500">
 
