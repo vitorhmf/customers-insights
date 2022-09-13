@@ -12,13 +12,16 @@ The marketing director believes that the company's future success depends on max
 
 In this way, this project goals to find insights into how do annual members and casual riders use Cyclistic bikes diﬀerently. 
 
-The company's history from August 2021 to July 2022 was analyzed, in a **total of 5,733,030 rides records**, and the conclusions to be presented to the marketing director are available in a dashboard that can be accessed through this [**link**](https://public.tableau.com/views/CyclisticAnalysis_16628584053490/Painel1?:language=pt-BR&:display_count=n&:origin=viz_share_link).
+The company's history from August 2021 to July 2022 was analyzed, in a **total of 5,733,030 rides records**, and the conclusions to be presented to the marketing director are available in a **dashboard that can be accessed through this [link](https://public.tableau.com/views/CyclisticAnalysis_16628584053490/Painel1?:language=pt-BR&:display_count=n&:origin=viz_share_link)**.
 
-<img src="images/dashboard_print.png" width="700">
+**Disclaimer:** Cyclistic is a fictitious company, as is the data used in this project that is part of the completion of Google's certification in Data Analytics
+
+* **Dashboard Overview:**
+<img src="images/dashboard_overview.PNG" width="700">
+
+*The dashboard can be accessed through this [link](https://public.tableau.com/views/CyclisticAnalysis_16628584053490/Painel1?:language=pt-BR&:display_count=n&:origin=viz_share_link)*
 
 **Key Words:** Google Data Analytics, Customer Insights, R, Tydiverse, Geosphere, Dplyr, Tableau, Dashboard
-
-**Disclaimer:** Cyclistic is a fictitious company, according to the context presented in this project.
 
 ## 2. Methodology
 
@@ -50,7 +53,9 @@ To better define the scope of the analysis and avoid bias in the conclusions dev
 
 ### 4.1 Loading Data
 
-[Cyclistic Historical Data](https://divvy-tripdata.s3.amazonaws.com/index.html)
+As previously informed, the company's data is fictitious and is available at this [link](https://divvy-tripdata.s3.amazonaws.com/index.html), where it is possible to access information from 2013 to 2022. For the project in question, an interval of 12 months was selected (from August 2021 to July 2022).
+
+[Cyclistic Historical Data]
 
 ### 4.2 Data Description
 
@@ -98,9 +103,11 @@ The complete code for this step is available [here](https://github.com/vitorhmf/
 
 <img src="images/customer_types.PNG" width="400">
 
-### 6.2 Seasonality Analysis
+As discussed earlier, the main objective of this project is to gather business insights that contribute to the increase in the migration of occasional customers to annual members. Thus, the first view presented is the relationship between the number of trips for each type of customer.
 
-* **Annual Seasonality (Rides vs. Month):**
+So we have an initial scenario with **42% of trips made by casual customers** and **58% by members with an annual subscription**.
+
+### 6.2 Annual Seasonality (Rides vs. Month)
 
 <img src="images/annual_seasonality.PNG" width="500">
 
@@ -113,17 +120,29 @@ The number of rides has a strong relationship with the climate of the region (de
 | Summer                 | Jun, Jul, Aug                          | 17°C to 28°C         |
 | Fall                   | Sep, Out, Nov                          | 7°C to 17°C          |
 
+According to the usage profile during the year, an interesting action would be to launch a marketing campaign during the spring for occasional customers to migrate to the annual plan.
 
-
-* **Weekly Seasonality (Rides vs. Day of Week):**
+### 6.3 Weekly Seasonality (Rides vs. Days of Week):
 
 <img src="images/weekly_seasonality.PNG" width="500">
 
-### 6.3 Rides Analysis:
+Here, there is a clear difference between the travels of casual customers and member customers. Occasional customers tend to use the company's services more on weekends, while annual subscribers use more during business days.
 
-<img src="images/ride_information.PNG" width="700">
+This fact can increase the assertiveness of marketing campaigns by focusing on casual customers who are in the habit of using the services during weekdays.
+
+### 6.4 Rides Analysis:
+
+<img src="images/ride_information.PNG" width="900">
+
+Although the average distances between the two types of customers do not have significant differences, travel time and speed provide important information.
+
+Member customers make faster trips at higher speeds, adding to this the fact that most of their trips are during weekdays, we can conclude that in most cases the use of bicycles is not done for leisure. They can be used to go to work or for personal commitments, for example.
+
+In this way, marketing campaigns aimed at casual customers should focus on the advantages of using the annual plan to have a quick and convenient means of transport for appointments during weekdays.
 
 ## 7. Step 5: Share
+
+<img src="images/dashboard_overview.PNG" width="700">
 
 [**Dashboard**](https://public.tableau.com/views/CyclisticAnalysis_16628584053490/Painel1?:language=pt-BR&:display_count=n&:origin=viz_share_link)
 
@@ -135,4 +154,4 @@ The number of rides has a strong relationship with the climate of the region (de
 
 * **Geolocation:** the decision to eliminate the columns with the names and ids of the start and end stations avoided the elimination of more than 800,000 records (approximately 15% of the dataset), however, the use of geolocation to define the stations proved to be ineffective, as
 
-## 10. References
+## 9. References
