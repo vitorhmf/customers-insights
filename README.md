@@ -1,4 +1,4 @@
-# Cyclistic Customers Insights (Under Development)
+# Cyclistic Customers Insights
 
 ### Google Data Analytics Capstone: Cyclistic bike-share analysis
 
