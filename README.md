@@ -148,9 +148,11 @@ In this way, marketing campaigns aimed at casual customers should focus on the a
 
 ## 7. Step 5: Share
 
+After processing the data with the R language, Tableau was used to build the **[dashboard](https://public.tableau.com/views/CyclisticAnalysis_16628584053490/Painel1?:language=pt-BR&:display_count=n&:origin=viz_share_link)**. The final data product was put into production by the Tableau Public framework, this option is viable for data that has no sharing restrictions, however, for more sensitive information it is important to look for other alternatives.
+
 <img src="images/dashboard_overview.PNG" width="700">
 
-[**Dashboard**](https://public.tableau.com/views/CyclisticAnalysis_16628584053490/Painel1?:language=pt-BR&:display_count=n&:origin=viz_share_link)
+
 
 ## 8. Step 6: Act
 
@@ -160,10 +162,13 @@ In this way, marketing campaigns aimed at casual customers should focus on the a
 
 * **Insight 2:** Casual customers tend to use the company's services more on weekends, while annual subscribers use more during business days. This fact would direct a marketing campaigns focused on casual customers who are in the habit of using the services during weekdays.
 
-* **Insight 3:** 
+* **Insight 3:** Member customers make faster trips at higher speeds, adding to this the fact that most of their trips are during weekdays, we can conclude that in most cases the use of bicycles is not done for leisure. A possible action from this insight would be to target marketing campaigns to casual customers who have a high recurrence on weekdays.
 
 ### 8.2. Next Steps
 
-* **Geolocation:** the decision to eliminate the columns with the names and ids of the start and end stations avoided the elimination of more than 800,000 records (approximately 15% of the dataset), however, the use of geolocation to define the stations proved to be ineffective, as
+* **Improve the use of geolocation information:** the decision to eliminate the columns with the names and ids of the start and end stations avoided the elimination of more than 800,000 records (approximately 15% of the dataset), however, the use of geolocation to define the stations proved to be ineffective, as it did not precisely define the stations. Therefore, it is worth discussing with the business team about the possibility of changing this data treatment strategy.
 
 ## 9. References
+
+* [Google Data Analytics Certificate (Coursera)](https://www.coursera.org/professional-certificates/google-data-analytics)
+* [Chicago Climate (Wikipedia)](https://en.wikipedia.org/wiki/Chicago#Climate)
