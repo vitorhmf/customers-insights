@@ -12,7 +12,7 @@ The marketing director believes that the company's future success depends on max
 
 In this way, this project goals to find insights into how do annual members and casual riders use Cyclistic bikes diﬀerently. 
 
-The company's history from August 2021 to July 2022 was analyzed, in a **total of 5,733,030 rides records**, and the conclusions to be presented to the marketing director are available in a **dashboard that can be accessed through this [link](https://public.tableau.com/views/CyclisticAnalysis_16628584053490/Painel1?:language=pt-BR&:display_count=n&:origin=viz_share_link)**.
+The company's history from August 2021 to July 2022 was analyzed, in a **total of 5,733,030 rides records**, and the conclusions to be presented to the marketing director are available in a dashboard that can be accessed through this [link](https://public.tableau.com/views/CyclisticAnalysis_16628584053490/Painel1?:language=pt-BR&:display_count=n&:origin=viz_share_link).
 
 **Disclaimer:** Cyclistic is a fictitious company, as is the data used in this project that is part of the completion of Google's certification in Data Analytics
 
@@ -142,7 +142,7 @@ This fact can increase the assertiveness of marketing campaigns by focusing on c
 
 Although the average distances between the two types of customers do not have significant differences, travel time and speed provide important information.
 
-Member customers make faster trips at higher speeds, adding to this the fact that most of their trips are during weekdays, we can conclude that in most cases the use of bicycles is not done for leisure. They can be used to go to work or for personal commitments, for example.
+Member customers make faster trips at higher speeds, adding to this the fact that most of their trips are during weekdays, we can conclude that in most cases the use of bicycles is not done for leisure. They should be used to go to work or for personal commitments, for example.
 
 In this way, marketing campaigns aimed at casual customers should focus on the advantages of using the annual plan to have a quick and convenient means of transport for appointments during weekdays.
 
@@ -154,7 +154,13 @@ In this way, marketing campaigns aimed at casual customers should focus on the a
 
 ## 8. Step 6: Act
 
-### 8.1 Actions
+### 8.1 Business Insights
+
+* **Insight 1:** The number of rides has a strong relationship with the climate of the region, thus an interesting action would be to launch a marketing campaign during the spring for occasional customers to migrate to the annual plan. 
+
+* **Insight 2:** Casual customers tend to use the company's services more on weekends, while annual subscribers use more during business days. This fact would direct a marketing campaigns focused on casual customers who are in the habit of using the services during weekdays.
+
+* **Insight 3:** 
 
 ### 8.2. Next Steps
 
